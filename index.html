@@ -1,8 +1,10 @@
+//SKIBIDI TOILET TOAST
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>Best Unblocked Games For Chromebooks</title>
+  <title>Unblocked Games</title>
   <style>
     body {
       font-family: Arial, sans-serif;
@@ -70,23 +72,21 @@
   <div class="game-list" id="gameList"></div>
 
   <script>
-    // Your games list (all lowercase for folder names)
     const games = [
-      { name: "1v1.lol", path: "games/1v1.lol/index.html" },
-      { name: "2048", path: "games/2048/index.html" },
-      { name: "8ball", path: "games/8ball/index.html" },
-      { name: "backcountry", path: "games/backcountry/index.html" },
-      { name: "bloonstd4", path: "games/bloonstd4/index.html" },
-      { name: "captainscallisto", path: "games/captainscallisto/index.html" },
-      { name: "minecraft js", path: "games/minecraft-js/index.html" },
-      { name: "asciispace", path: "games/asciispace/index.html" },
-      { name: "chromainincident", path: "games/chromainincident/index.html" },
-      { name: "chromedino", path: "games/chromedino/index.html" },
-      { name: "connect3", path: "games/connect3/index.html" },
-      { name: "flappybird", path: "games/flappybird/index.html" }
+      { name: "1v1.lol", path: "Games/1v1.lol/index.html" },
+      { name: "2048", path: "Games/2048/index.html" },
+      { name: "8ball", path: "Games/8ball/index.html" },
+      { name: "Backcountry", path: "Games/Backcountry/index.html" },
+      { name: "Bloonstd4", path: "Games/Bloonstd4/index.html" },
+      { name: "Captainscallisto", path: "Games/Captainscallisto/index.html" },
+      { name: "Minecraft-JS", path: "Games/Minecraft-JS/index.html" },
+      { name: "asciispace", path: "Games/asciispace/index.html" },
+      { name: "chromainincident", path: "Games/chromainincident/index.html" },
+      { name: "chromedino", path: "Games/chromedino/index.html" },
+      { name: "connect3", path: "Games/connect3/index.html" },
+      { name: "flappybird", path: "Games/flappybird/index.html" }
     ];
 
-    // About:blank opener
     function openBlank(url) {
       let win = window.open('about:blank', '_blank');
       win.document.write(`
@@ -97,7 +97,6 @@
       win.document.close();
     }
 
-    // Display games
     function displayGames(filter = "") {
       const list = document.getElementById("gameList");
       list.innerHTML = "";
@@ -118,84 +117,6 @@
       displayGames(e.target.value);
     });
 
-    // Initial load
-    displayGames();
-  </script>
-</body>
-</html>      background: #1a1a1a;
-      border-radius: 12px;
-      padding: 20px;
-      width: 200px;
-      box-shadow: 0 0 10px rgba(0,255,255,0.4);
-      transition: 0.3s;
-    }
-    .game-card:hover {
-      transform: scale(1.05);
-      box-shadow: 0 0 15px rgba(255,0,100,0.7);
-    }
-    button {
-      margin-top: 10px;
-      padding: 10px 18px;
-      border: none;
-      border-radius: 8px;
-      background: #00ffaa;
-      color: #000;
-      cursor: pointer;
-      font-weight: bold;
-      transition: 0.2s;
-    }
-    button:hover {
-      background: #ff0080;
-      color: #fff;
-    }
-  </style>
-</head>
-<body>
-  <header>🎮 Oskar’s Unblocked Games 🎮</header>
-
-  <input type="text" id="searchBar" placeholder="Search for a game...">
-
-  <div class="game-list" id="gameList">
-    <!-- Games will load here -->
-  </div>
-
-  <script>
-    const games = [
-      { name: "1v1.lol", path: "Games/1v1.lol/index.html" },
-      { name: "2048", path: "Games/2048/index.html" },
-      { name: "8Ball", path: "Games/8ball/index.html" },
-      { name: "Backcountry", path: "Games/backcountry/index.html" },
-      { name: "Bloons TD 4", path: "Games/bloonstd4/index.html" },
-      { name: "Captain's Callisto", path: "Games/captainscallisto/index.html" },
-      { name: "Minecraft JS", path: "Games/Minecraft-JS/index.html" },
-      { name: "Ascii Space", path: "Games/asciispace/index.html" },
-      { name: "Chroma Incident", path: "Games/chromainincident/index.html" },
-      { name: "Chrome Dino", path: "Games/chromedino/index.html" },
-      { name: "Connect 3", path: "Games/connect3/index.html" },
-      { name: "Flappy Bird", path: "Games/flappybird/index.html" }
-    ];
-
-    function displayGames(filter = "") {
-      const list = document.getElementById("gameList");
-      list.innerHTML = "";
-      games
-        .filter(game => game.name.toLowerCase().includes(filter.toLowerCase()))
-        .forEach(game => {
-          const card = document.createElement("div");
-          card.className = "game-card";
-          card.innerHTML = `
-            <h3>${game.name}</h3>
-            <button onclick="window.open('${game.path}','_blank')">Play</button>
-          `;
-          list.appendChild(card);
-        });
-    }
-
-    document.getElementById("searchBar").addEventListener("input", (e) => {
-      displayGames(e.target.value);
-    });
-
-    // Initial load
     displayGames();
   </script>
 </body>
